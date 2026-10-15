@@ -6,6 +6,7 @@ Responsive, multi-page handyman website using the Handy KRLO NYC black, white, a
 - `index.html` — Home
 - `about-us.html` — About Us
 - `services.html` — Services
+- `gallery.html` — Gallery / project photos
 - `reviews.html` — Reviews
 - `locations.html` — Locations We Serve
 - `contact-us.html` — Contact Us
