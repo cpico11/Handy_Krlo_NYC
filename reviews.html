@@ -1,0 +1,378 @@
+```html
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta name="description"
+        content="Read customer reviews and see feedback for Handy KRLO NYC on Angi and Google.">
+
+  <title>Customer Reviews | Handy KRLO NYC</title>
+
+  <link rel="stylesheet" href="assets/styles.css">
+  <script defer src="assets/main.js"></script>
+
+  <style>
+    .review-section {
+      margin: 40px auto;
+      padding: 35px;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 18px rgba(0, 0, 0, 0.07);
+    }
+
+    .review-section h2 {
+      margin-bottom: 12px;
+    }
+
+    .review-description {
+      max-width: 750px;
+      margin: 0 auto 25px;
+      line-height: 1.7;
+    }
+
+    .review-gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      margin: 25px 0;
+    }
+
+    .review-image-link {
+      display: block;
+      padding: 0;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      overflow: hidden;
+      background: #f7f7f7;
+      cursor: zoom-in;
+    }
+
+    .review-image-link img {
+      display: block;
+      width: 100%;
+      height: 260px;
+      object-fit: contain;
+      background: #f7f7f7;
+      transition: transform 0.25s ease;
+    }
+
+    .review-image-link:hover img {
+      transform: scale(1.03);
+    }
+
+    .review-image-link:focus-visible {
+      outline: 3px solid #17365d;
+      outline-offset: 4px;
+    }
+
+    .review-cta {
+      display: inline-block;
+      margin-top: 10px;
+    }
+
+    .review-lightbox {
+      width: min(92vw, 1000px);
+      max-width: none;
+      max-height: 92vh;
+      padding: 45px 15px 15px;
+      border: none;
+      border-radius: 10px;
+      background: #fff;
+    }
+
+    .review-lightbox::backdrop {
+      background: rgba(0, 0, 0, 0.85);
+    }
+
+    .review-lightbox img {
+      display: block;
+      max-width: 100%;
+      max-height: 78vh;
+      width: auto;
+      height: auto;
+      margin: auto;
+    }
+
+    .review-lightbox .lightbox-close {
+      position: absolute;
+      top: 8px;
+      right: 12px;
+      border: none;
+      background: transparent;
+      color: #111;
+      font-size: 30px;
+      cursor: pointer;
+    }
+
+    .review-lightbox p {
+      text-align: center;
+      margin: 12px 0 0;
+    }
+
+    @media (max-width: 600px) {
+      .review-section {
+        padding: 22px 16px;
+      }
+
+      .review-gallery {
+        grid-template-columns: 1fr;
+      }
+
+      .review-image-link img {
+        height: 240px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+
+    <a class="brand" href="index.html">
+      <img class="logo" src="assets/logo.svg"
+           alt="Handy KRLO NYC logo">
+
+      <div class="brand-name">
+        HANDY KRLO NYC
+        <span>RELIABLE HOME SERVICES</span>
+      </div>
+    </a>
+
+    <div class="language-note" lang="es">
+      ¡Se habla español!
+    </div>
+
+    <button class="menu-toggle" type="button"
+            aria-expanded="false" aria-controls="main-nav">
+      ☰ MENU
+    </button>
+
+    <nav class="nav" id="main-nav" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="about-us.html">About Us</a>
+      <a href="services.html">Services</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="reviews.html" aria-current="page">Reviews</a>
+      <a href="locations.html">Locations</a>
+      <a class="nav-cta" href="contact-us.html">Contact Us</a>
+    </nav>
+
+  </div>
+</header>
+
+<main>
+
+  <section class="section light">
+    <div class="wrap center">
+
+      <div class="eyebrow">Customer Feedback</div>
+
+      <h1 class="title">Reviews & Customer Experiences</h1>
+
+      <p class="intro">
+        At Handy KRLO NYC, we take pride in reliable service,
+        quality workmanship, and attention to detail. Explore
+        customer feedback from Angi and Google.
+      </p>
+
+      <!-- ANGI REVIEWS -->
+      <section class="review-section" aria-labelledby="angi-heading">
+
+        <h2 class="title" id="angi-heading">Angi Customer Reviews</h2>
+
+        <p class="review-description">
+          See feedback from customers who have experienced our
+          handyman services. Click any review image to enlarge it.
+        </p>
+
+        <div class="review-gallery">
+
+          <button class="review-image-link"
+                  type="button"
+                  data-image="assets/reviews/angi-review-1.jpg"
+                  data-alt="Angi customer review 1"
+                  aria-label="Enlarge Angi review 1">
+            <img src="assets/reviews/angi-review-1.jpg"
+                 alt="Angi customer review 1"
+                 loading="lazy">
+          </button>
+
+          <button class="review-image-link"
+                  type="button"
+                  data-image="assets/reviews/angi-review-2.jpg"
+                  data-alt="Angi customer review 2"
+                  aria-label="Enlarge Angi review 2">
+            <img src="assets/reviews/angi-review-2.jpg"
+                 alt="Angi customer review 2"
+                 loading="lazy">
+          </button>
+
+          <button class="review-image-link"
+                  type="button"
+                  data-image="assets/reviews/angi-review-3.jpg"
+                  data-alt="Angi customer review 3"
+                  aria-label="Enlarge Angi review 3">
+            <img src="assets/reviews/angi-review-3.jpg"
+                 alt="Angi customer review 3"
+                 loading="lazy">
+          </button>
+
+        </div>
+
+        <a class="btn review-cta"
+           href="REPLACE_WITH_YOUR_ANGI_REVIEWS_URL"
+           target="_blank"
+           rel="noopener noreferrer">
+          VIEW ALL ANGI REVIEWS
+        </a>
+
+      </section>
+
+      <!-- GOOGLE REVIEWS -->
+      <section class="review-section" aria-labelledby="google-heading">
+
+        <h2 class="title" id="google-heading">Google Customer Reviews</h2>
+
+        <p class="review-description">
+          Discover what customers have to say about working with
+          Handy KRLO NYC. Select a screenshot to view it in a
+          larger format, or visit our Google review page.
+        </p>
+
+        <div class="review-gallery">
+
+          <button class="review-image-link"
+                  type="button"
+                  data-image="assets/reviews/google-review-1.jpg"
+                  data-alt="Google customer review 1"
+                  aria-label="Enlarge Google review 1">
+            <img src="assets/reviews/google-review-1.jpg"
+                 alt="Google customer review 1"
+                 loading="lazy">
+          </button>
+
+          <button class="review-image-link"
+                  type="button"
+                  data-image="assets/reviews/google-review-2.jpg"
+                  data-alt="Google customer review 2"
+                  aria-label="Enlarge Google review 2">
+            <img src="assets/reviews/google-review-2.jpg"
+                 alt="Google customer review 2"
+                 loading="lazy">
+          </button>
+
+          <button class="review-image-link"
+                  type="button"
+                  data-image="assets/reviews/google-review-3.jpg"
+                  data-alt="Google customer review 3"
+                  aria-label="Enlarge Google review 3">
+            <img src="assets/reviews/google-review-3.jpg"
+                 alt="Google customer review 3"
+                 loading="lazy">
+          </button>
+
+        </div>
+
+        <a class="btn review-cta"
+           href="REPLACE_WITH_YOUR_GOOGLE_REVIEWS_URL"
+           target="_blank"
+           rel="noopener noreferrer">
+          VIEW ALL GOOGLE REVIEWS
+        </a>
+
+      </section>
+
+      <!-- CONTACT CTA -->
+      <section class="review-section">
+        <h2 class="title">Ready to Start Your Project?</h2>
+
+        <p class="review-description">
+          Contact Handy KRLO NYC to discuss your home repairs,
+          furniture assembly, installations, and other handyman needs.
+        </p>
+
+        <a class="btn" href="contact-us.html">CONTACT US</a>
+      </section>
+
+    </div>
+  </section>
+
+</main>
+
+<!-- IMAGE LIGHTBOX -->
+<dialog class="review-lightbox"
+        id="review-lightbox"
+        aria-label="Expanded customer review image">
+
+  <button class="lightbox-close"
+          type="button"
+          aria-label="Close enlarged image">
+    &times;
+  </button>
+
+  <img id="lightbox-image" src="" alt="">
+
+  <p>Click outside the image or press Escape to close.</p>
+
+</dialog>
+
+<footer class="footer">
+  <div class="wrap">
+
+    <strong>HANDY KRLO NYC</strong>
+
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="about-us.html">About Us</a>
+      <a href="services.html">Services</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="reviews.html">Reviews</a>
+      <a href="locations.html">Locations</a>
+      <a href="contact-us.html">Contact Us</a>
+    </div>
+
+    <small>
+      © <span class="current-year">2026</span>
+      Handy KRLO NYC. All rights reserved.
+    </small>
+
+  </div>
+</footer>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const lightbox = document.getElementById("review-lightbox");
+    const lightboxImage = document.getElementById("lightbox-image");
+    const closeButton = lightbox.querySelector(".lightbox-close");
+
+    document.querySelectorAll(".review-image-link").forEach(function (button) {
+      button.addEventListener("click", function () {
+        lightboxImage.src = button.dataset.image;
+        lightboxImage.alt = button.dataset.alt || "Customer review";
+        lightbox.showModal();
+      });
+    });
+
+    closeButton.addEventListener("click", function () {
+      lightbox.close();
+    });
+
+    lightbox.addEventListener("click", function (event) {
+      if (event.target === lightbox) {
+        lightbox.close();
+      }
+    });
+
+    lightbox.addEventListener("close", function () {
+      lightboxImage.src = "";
+    });
+  });
+</script>
+
+</body>
+</html>
+```
