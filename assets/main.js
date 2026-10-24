@@ -24,8 +24,8 @@ document.addEventListener("DOMContentLoaded", function () {
   if (form) {
     form.addEventListener("submit", function (event) {
       event.preventDefault();
-      const businessEmail = "YOUR-EMAIL@example.com";
-      if (businessEmail === "YOUR-EMAIL@example.com") {
+      const businessEmail = "handykrlonyc@gmail.com";
+      if (businessEmail === "handykrlonyc@gmail.com") {
         alert("Please configure the business email in assets/main.js or connect a form service before publishing.");
         return;
       }
