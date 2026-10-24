@@ -25,12 +25,10 @@ document.addEventListener("DOMContentLoaded", function () {
     form.addEventListener("submit", function (event) {
       event.preventDefault();
       const businessEmail = "handykrlonyc@gmail.com";
-      if (businessEmail === "handykrlonyc@gmail.com") {
-        alert("Please configure the business email in assets/main.js or connect a form service before publishing.");
-        return;
-      }
       const data = new FormData(form);
+
       const subject = encodeURIComponent("Handy KRLO NYC — Estimate Request");
+     
       const body = encodeURIComponent(
         "Name: " + data.get("name") + "\n" +
         "Email: " + data.get("email") + "\n" +
